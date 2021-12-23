@@ -1,0 +1,44 @@
+---
+title: "Euler Alencar, Msc."
+description: |
+  Some additional details about the blog
+site: distill::distill_website
+image: "circle-euler.jpg"
+links:
+  - label: '<i class="fab fa-twitter"></i> Twitter'
+    url: "https://twitter.com/eu_ler"
+  - label: '<i class="fab fa-github"></i> GitHub'
+    url: "https://github.com/euleralencar"
+  - label: '<i class="fab fa-linkedin"></i> LinkedIn'
+    url: "https://www.linkedin.com/in/euleralencar/"
+  - label: '<i class="fas fa-envelope"></i> Email'
+    url: "mailto:euleralencar@gmail.com"
+preview: circle-euler.jpg
+twitter:
+  creator: "@eu_ler"
+  site: "@eu_ler"
+output:
+  postcards::jolla
+---
+ 
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(metathis)
+meta() %>%
+  meta_description(
+    "The personal website of Euler Alencar"
+  ) %>%
+  #meta_name("github-repo" = "jhelvy/jhelvy.com") %>%
+  meta_viewport() %>%
+  meta_social(
+    #title = "https://www.pipinghotdata.com/",
+    #url = "https://www.pipinghotdata.com/",
+    #image = "https://github.com/shannonpileggi/pipinghotdata_distill/blob/master/shannon-circle.png?raw=true",
+    image_alt = "A photo of Euler Alencar",
+    og_type = "website",
+    og_author = c("Euler Alencar"),
+    twitter_card_type = "summary",
+    twitter_creator = "@eu_ler"
+  )
+```
+ 
+Hi! <span class="wave">👋</span> I am a former statistics college professor now working in industry. I love wrangling, analyzing, and visualizing data, and helping others do the same. 
