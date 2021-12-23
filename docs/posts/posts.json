@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to my blog",
+    "description": "Welcome to our new blog. We hope you enjoy reading what we have to say!",
+    "author": [
+      {
+        "name": "Euler Alencar",
+        "url": "https://www.linkedin.com/in/euleralencar/"
+      }
+    ],
+    "date": "2021-12-23",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-23T20:11:27-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-12-23-como-criar-um-blog-com-distill/",
+    "title": "Como criar um blog com Distill",
+    "description": "Passos para criar um blog no github com distill.",
+    "author": [
+      {
+        "name": "Euler Alencar",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-22",
+    "categories": [],
+    "contents": "\r\nConfiguração inicial\r\n\r\n\r\n# Comando inicial ---------------------------------------------------------\r\n\r\n# passo 1: Instalação dos pacotes essenciaos\r\ninstall.packages(c(\"usethis\", \"distill\"))\r\n\r\n# passo 2: Criar um novo projeto\r\nusethis::create_project(\"portfolioEuler\")\r\n\r\n\r\n\r\nCompare as duas telas do RStudio.\r\nConfiguração do github para criar o blog\r\n\r\n\r\n# Configuranção do Github -------------------------------------------------\r\n\r\n#passo 3:\r\nusethis::use_git_config(user.name = \"euleralencar\",\r\n                        user.email = \"euleralencar@gmail.com\")\r\n\r\n# passo 3.5: Criar o Token no github\r\nusethis::create_github_token()\r\n\r\n# passo 3.75: Setar o token no R\r\ngitcreds::gitcreds_set()\r\n\r\n# passo 4: Usar o git\r\nusethis::use_git()\r\n\r\n# sair do projeto e voltar\r\n\r\n# passo 5: Criar o projeto no github\r\nusethis::use_github()\r\n\r\n# passo 6: Vai criar a página no Github Pages\r\nusethis::use_github_pages(\"master\", \"/docs\")\r\n\r\n\r\n\r\nVeja no seu github se aparece a mesma tela:\r\n\r\n\r\n\r\nCrie o arquivo .nojekyll e depois use o distill para configurar o ambiente do blog.\r\n\r\n\r\n#passo 7:\r\nfile.create(\".nojekyll\")\r\n#list.files(all.files = TRUE)\r\n\r\n#passo 8:\r\ndistill::create_blog(\".\", \"Portfolio Euler\", gh_pages = TRUE)\r\n\r\n#passo 9:\r\ndistill::create_post(\"Título do Meu Primeiro Post\")\r\n\r\n#passo 10: commit e push\r\n# -> Pode comitar diretamente do RStudio\r\n\r\n#passo 11: acessar [seu_login].github.io/[seu_repositorio]\r\n\r\n\r\n\r\nÉ possível comitar diretamente do RStudio e dar pull (empurrar) para o Github.\r\n\r\n\r\n# Criando novo post -------------------------------------------------------\r\n\r\ndistill::create_post(\"Como criar um blog no Distill\")\r\n\r\n\r\n\r\nAo criar um novo post será criado um rmarkdown deste modelo:\r\n\r\n\r\n\r\nApós finalizar o processo, dê o commit e suba para o github.\r\nAlgumas referências\r\nhttps://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/\r\nhttps://rstudio.github.io/distill/blog.html\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-12-23-como-criar-um-blog-com-distill/../../docs/imagens/figura1-post1.PNG",
+    "last_modified": "2021-12-23T20:16:53-03:00",
+    "input_file": {}
+  }
+]

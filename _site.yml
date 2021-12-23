@@ -1,0 +1,12 @@
+name: "."
+title: "Como criar um blog com Distill"
+description: |
+ The personsal website of Euler Alencar
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article

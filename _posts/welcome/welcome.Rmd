@@ -1,0 +1,23 @@
+---
+title: "Welcome to my blog"
+description: |
+  Welcome to our new blog. We hope you enjoy reading what we have to say!
+author:
+  - name: Euler Alencar 
+    url: https://www.linkedin.com/in/euleralencar/
+date: 12-23-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+
