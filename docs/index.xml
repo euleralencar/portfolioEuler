@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Portfólio Euler</title>
+    <link>https://milesmcbain.com</link>
+    <atom:link href="https://milesmcbain.com/index.xml" rel="self" type="application/rss+xml"/>
+    <description>The personsal website of Euler Alencar
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Como criar um blog com Distill</title>
+      <dc:creator>Euler Alencar</dc:creator>
+      <link>https://milesmcbain.com/posts/2021-12-23-como-criar-um-blog-com-distill</link>
+      <description>Passos para criar um blog no github com distill.</description>
+      <guid>https://milesmcbain.com/posts/2021-12-23-como-criar-um-blog-com-distill</guid>
+      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://milesmcbain.com/posts/2021-12-23-como-criar-um-blog-com-distill/distill-preview.png" medium="image" type="image/png" width="1880" height="566"/>
+    </item>
+    <item>
+      <title>Welcome to my blog</title>
+      <dc:creator>Euler Alencar</dc:creator>
+      <link>https://milesmcbain.com/posts/welcome</link>
+      <description>Welcome to our new blog. We hope you enjoy reading what we have to say!</description>
+      <guid>https://milesmcbain.com/posts/welcome</guid>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

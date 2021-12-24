@@ -3,6 +3,8 @@ title: "Euler Alencar, Msc."
 description: |
   Some additional details about the blog
 site: distill::distill_website
+logo: docs/imagens/sum_.jpg
+css: theme.css
 image: "circle-euler.jpg"
 links:
   - label: '<i class="fab fa-twitter"></i> Twitter'
@@ -41,4 +43,8 @@ meta() %>%
   )
 ```
  
-Hi! <span class="wave">👋</span> I am a former statistics college professor now working in industry. I love wrangling, analyzing, and visualizing data, and helping others do the same. 
+Hi! <span class="wave">👋</span> I’m a data analyst working in Supreme Court of Brazil (STF) to better understand how data can drive decision-make. I have been leading the statistical analysis team that is composed of statisticians and data analysts since 2019. </br>
+
+Currently, I’m managing a project about NLP and data quality. For the last 12 years, I have been performing roles as a statistician and business intelligence analyst where I handled hundreds of thousands of records daily for Brazilian government agencies. </br>
+
+**Interest**: Statistics | Data Visualization | Data Science | Leadership | Facilitation | Philosophy | Stoicism
