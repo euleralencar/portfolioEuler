@@ -4,10 +4,10 @@ description: |
   Passos para criar um blog no github com distill.
 author:
   - name: Euler Alencar
-date: 2021-12-22
+date: 2021-12-24
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: true
 ---
 
 ```{r setup, include=FALSE}
@@ -17,6 +17,19 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning=FALSE, 
                       include=TRUE)
 ```
+
+
+# Distill
+
+Distill é um pacote desenvolvido para R Markdown. Basicamente é um ecossistema de pacotes para a criação de documentos computacionais em R. O objetivo do pacote Distill é fornecer um formato de saída otimizado para comunicação científica e técnica online. O pacote Distill R fornece dois formatos de saída HTML para documentos R Markdown:
+
+- Artigos HTML únicos (distill_article) e
+- Sites HTML de várias páginas, incluindo blogs (distill_website).
+
+Esses formatos são baseados na `Distill web framework` usada pelo Distill Machine Learning Journal ([Olah et al. 2018](https://distill.pub/journal/)). A estrutura da web do Distill foi originalmente desenvolvida para nortear uma comunicação técnica e científica mais envolvente e eficaz.
+
+![Isso não foi nada científico!!!](https://blogpilates.com.br/wp-content/uploads/2019/06/gif-uau.gif)
+
 
 
 ## Configuração inicial
@@ -32,7 +45,7 @@ usethis::create_project("portfolioEuler")
 
 ```
 
-Compare as duas telas do RStudio.
+Compare as duas telas do RStudio, a do novo projeto criado e onde você digitou os comandos acima. Pode fechar a primeira janela do R-Studio e ficar somente com a tela do Projeto aberta.
 
 ## Configuração do github para criar o blog
 
@@ -109,11 +122,16 @@ knitr::include_graphics("../../docs/imagens/figura2-post1.PNG")
 
 Após finalizar o processo, dê o commit e suba para o github.
 
+### Observação
 
-## Algumas referências
+Sempre que for customizar o blog, tome o cuidado de primeiramente gitar o projeto. Caso dê algum erro, apenas volte para versão anterior. De preferência, crie uma nova branch e depois junte ao master do seu git.
+
+
+## Referências
 
 - https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/
 - https://rstudio.github.io/distill/blog.html
+- https://www.rstudio.com/blog/distill/#ref-olah2018the
 
 ---
 
